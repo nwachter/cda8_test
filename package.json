@@ -10,8 +10,8 @@
     "test:unit": "jest",
     "test:e2e": "npx playwright test",
     "dev": "nodemon server.js",
-        "start": "nodemon server.js",
-    "build": "echo \"No build step required\""
+    "start": "nodemon server.js",
+    "build": "npm build"
   },
   "keywords": [
     "tests"
