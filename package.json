@@ -1,0 +1,29 @@
+{
+  "name": "cda8_test",
+  "version": "1.0.0",
+  "description": "Exemples de tests unitaires",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "supertest": "nodemon run supertest",
+    "test:integration": "jest",
+    "test:unit": "jest",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "tests"
+  ],
+  "author": "Nina Wachter",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "node": "^26.4.0",
+    "nodemon": "^3.1.14"
+  }
+}
