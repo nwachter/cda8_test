@@ -9,7 +9,9 @@
     "test:integration": "jest",
     "test:unit": "jest",
     "test:e2e": "npx playwright test",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+        "start": "nodemon server.js",
+    "build": "echo \"No build step required\""
   },
   "keywords": [
     "tests"
