@@ -8,6 +8,7 @@
     "supertest": "nodemon run supertest",
     "test:integration": "jest",
     "test:unit": "jest",
+    "test:e2e": "npx playwright test",
     "dev": "nodemon server.js"
   },
   "keywords": [
