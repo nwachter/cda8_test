@@ -20,7 +20,7 @@ jobs:
       - name: Installer les dépendances
         run: npm install
 
-      - name: Lancer les tests
+      - name: Lancer les tests unitaires
         run: npm run test:unit
 
       - name: Lancer les tests d'intégration
