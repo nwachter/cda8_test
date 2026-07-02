@@ -8,3 +8,4 @@ test("Tester la connexion", async ({page}) => {
     const message = page.locator('#message')
     await expect(message).toHaveText('Connexion réussie !')
 })
+//
