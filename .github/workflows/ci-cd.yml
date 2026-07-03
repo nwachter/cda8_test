@@ -20,6 +20,9 @@ jobs:
       - name: Installer les dépendances
         run: npm install
 
+      - name: Installer les navigateurs Playwright
+        run: npx playwright install --with-deps
+
       - name: Lancer les tests unitaires
         run: npm run test:unit
 
@@ -32,11 +35,7 @@ jobs:
       - name: Déclencher le déploiement sur Render
         if: success()
         run: |
-          curl -X POST {{ secrets.RENDER_DEPLOY_HOOK_URL }} \
-          -H "
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
 
-      
-    
-    
 
    
