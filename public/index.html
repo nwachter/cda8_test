@@ -30,6 +30,7 @@
             });
             const data = await response.json();
             document.getElementById('message').textContent = data.message || 'Login failed';
+            document.getElementById('message').style.color = response.status === 200 ? 'green' : 'red';
         });
     </script>
 </body>

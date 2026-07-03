@@ -29,6 +29,12 @@ jobs:
       - name: Lancer les tests e2e
         run: npm run test:e2e
 
+      - name: Déclencher le déploiement sur Render
+        if: success()
+        run: |
+          curl -X POST {{ secrets.RENDER_DEPLOY_HOOK_URL }} \
+          -H "
+
       
     
     
